@@ -457,6 +457,12 @@ article.mainbanner {
   margin-top: 48px;
   height: 408px;
 }
+.mainbanner-inner.swiper .text {
+  position: absolute;
+  background-color: violet;
+  width: 300px;
+  height: 150px;
+}
 
 .mainbanner-inner.swiper {
   width: 100%;
@@ -477,14 +483,14 @@ article.mainbanner {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .mainbanner-inner.swiper .swiper-slide {
   overflow: hidden;
   border-radius: 20px;
-  transform: scale(.1);
-  transition: .3s;
+  transform: scale(0.1);
+  transition: 0.3s;
   transform-origin: center;
 }
 
@@ -494,21 +500,21 @@ article.mainbanner {
 }
 
 .mainbanner-inner.swiper .swiper-slide.swiper-slide-prev {
-  transform: scale(.4) translateX(-100%) translateY(20%);
+  transform: scale(0.4) translateX(-100%) translateY(20%);
 }
 
 .mainbanner-inner.swiper .swiper-slide.swiper-slide-next {
-  transform: scale(.4) translateX(100%) translateY(20%);
+  transform: scale(0.4) translateX(100%) translateY(20%);
 }
 
-.mainbanner-inner .swiper-slide .text {
+/* .mainbanner-inner .swiper-slide .text {
   position: absolute;
   top: 7rem;
   left: 8rem;
   transform: translate(0, 30px);
   opacity: 0;
   transition: all 0.35s 0.75s ease-in-out;
-}
+} */
 
 /*mainbody btn*/
 article.mainbanner .slide-wrap .mainbody_btn .mainbody_btn_left {
@@ -808,7 +814,6 @@ article.t-banner .t-banner-head .t-banner-button .tbtn-right {
   background-position: center center;
   cursor: pointer;
 }
-
 
 /* t-banner .swiper */
 article.t-banner .swiper-wrap {

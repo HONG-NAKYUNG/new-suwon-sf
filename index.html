@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>취업 포토폴리오(수원스타필드)</title>
-    <link rel="stylesheet" href="./css/initial.css" />    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/initial.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -191,26 +194,36 @@
       <section id="suwon_body">
         <article class="mainbanner">
           <div class="swiper mainbanner-inner">
-            <div class="swiper-wrapper">              
+            <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="#"><img src="./img/mainpage/mainbanner/main_banner.jpg" alt="쿠키런윈터 페스타"/>
-                <div class="text">
-                  <img src="./img/mainpage/mainbanner/main_banner_txt.png" alt="">
-                </div></a>
+                <a href="#">
+                  <img
+                    src="./img/mainpage/mainbanner/main_banner.jpg"
+                    alt="쿠키런윈터 페스타"
+                /></a>
               </div>
               <div class="swiper-slide">
-                <img src="./img/mainpage/mainbanner/main_banner_2.jpg" alt="쿠키런윈터 페스타"/>
+                <img
+                  src="./img/mainpage/mainbanner/main_banner_2.jpg"
+                  alt="쿠키런윈터 페스타"
+                />
               </div>
               <div class="swiper-slide">
-                <img src="./img/mainpage/mainbanner/main_banner_3.jpg" alt="쿠키런윈터 페스타"/>
+                <img
+                  src="./img/mainpage/mainbanner/main_banner_3.jpg"
+                  alt="쿠키런윈터 페스타"
+                />
               </div>
               <div class="swiper-slide">
-                <img src="./img/mainpage/mainbanner/main_banner_4.jpg" alt="쿠키런윈터 페스타"/>
+                <img
+                  src="./img/mainpage/mainbanner/main_banner_4.jpg"
+                  alt="쿠키런윈터 페스타"
+                />
               </div>
             </div>
             <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>        
-          </div>        
+            <div class="swiper-button-prev"></div>
+          </div>
         </article>
         <div class="link">
           <a href="#">수원점 오시는 길</a>
@@ -724,19 +737,19 @@
     <script src="./js/jquery_3.5.1.js"></script>
     <script>
       const swiper = new Swiper(".mainbanner-inner", {
-        slidesPerView: 3, 
-        loop: true,        
+        slidesPerView: 3,
+        loop: true,
         centeredSlides: true,
         navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
-        },      
+        },
       });
-      swiper.slideTo(2); 
+      swiper.slideTo(2);
     </script>
   </body>
 </html>
