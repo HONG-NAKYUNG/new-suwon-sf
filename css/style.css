@@ -457,12 +457,6 @@ article.mainbanner {
   margin-top: 48px;
   height: 408px;
 }
-.mainbanner-inner.swiper .text {
-  position: absolute;
-  background-color: violet;
-  width: 300px;
-  height: 150px;
-}
 
 .mainbanner-inner.swiper {
   width: 100%;
@@ -515,43 +509,45 @@ article.mainbanner {
   opacity: 0;
   transition: all 0.35s 0.75s ease-in-out;
 } */
-
-/*mainbody btn*/
-article.mainbanner .slide-wrap .mainbody_btn .mainbody_btn_left {
+.swiper.mainbanner-inner .swiper-button-next {
   position: absolute;
   top: 50%;
-  left: 20px;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url("../img/mainpage/mainbanner/mainbanner_btn_left.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  cursor: pointer;
-  opacity: 0;
-}
-article.mainbanner .slide-wrap .mainbody_btn .mainbody_btn_right {
-  position: absolute;
-  top: 50%;
-  right: 20px;
+  right: 320px;
   transform: translate(50%, -50%);
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url("../img/mainpage/mainbanner/mainbanner_btn_right.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: rgba(0, 0, 0, 0.6)
+    url("../img/mainpage/mainbanner/mainbanner_btn_right.svg") no-repeat center
+    center;
   cursor: pointer;
   opacity: 0;
 }
-article.mainbanner .slide-wrap:hover .mainbody_btn_left {
+.swiper.mainbanner-inner:hover .swiper-button-next {
   opacity: 1;
 }
-article.mainbanner .slide-wrap:hover .mainbody_btn_right {
+.swiper.mainbanner-inner .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: 320px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6)
+    url("../img/mainpage/mainbanner/mainbanner_btn_left.svg") no-repeat center
+    center;
+  cursor: pointer;
+  opacity: 0;
+}
+.swiper.mainbanner-inner:hover .swiper-button-prev {
   opacity: 1;
+}
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev:after {
+  display: none;
 }
 
 /*mainbanner 밑 link*/
